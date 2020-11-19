@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ajay Dhawan</title>
+  <meta charset="utf-8">
+  <meta name="author" content="Ajay Dhawan">
+  <meta name="description" content="Ajay Dhawan">
+  <meta name="keywords:" content="Ajay, Dhawan, resume">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<!-- Body -->
+<body class= "is-preload landing">
+  <div id = "page-wrapper">
+    <!--Header-->
+    <header id = "header">
+      <!-- Front page logo -->
+      <h1 id="logo"><a href ="index.html">Ajay Dhawan</a></h1>
+      <!-- small screen nav -->
+      <div id="myNav" class="overlay-nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content">
+          <a href="index.html" onclick="closeNav()">Home</a>
+          <a href="#home-about1" onclick="closeNav()">About Me</a>
+          <a href="#portfolio1" onclick="closeNav()">My Work</a>
+          <a href="#contact" onclick="closeNav()">Contact</a>
+        </div>
+      </div>
+
+      <!-- small screen 3 bars nav open button -->
+      <div class="topnav" id="myTopnav">
+        <a href="javascript:void(0);" class="icon-top" onclick="openNav()">
+          <i class="fa fa-bars" style="font-size:32px; color: #808080"></i>
+        </a>
+      </div>
+
+      <!-- Big screen nav -->
+      <nav id = "nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#home-about1">About Me</a></li>
+          <li><a href="#portfolio1">My Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Front page-->
+    <section class="banner">
+      <!-- front page text -->
+      <h1 class="title">Hi My Name Is Ajay Dhawan
+      <p class="quote">Software Engineer, Front and Back End Web Dev, Entrepenuer</p>
+      </h1>
+      <!-- button that connects to  portfolio  -->
+      <a href="#portfolio1" class="button button-accent">See My Work</a>
+    </section>
+
+    <!-- About me section  -->
+    <section id="home-about1" class="home-about">
+      <div class="home-about-textbox">
+        <h1>About Me</h1>
+        <p>Hi my name is Ajay Dhawan, and I’m currently a student completing
+          my bachelor of engineering degree in<strong> software engineering</strong>.
+          Software
+          engineering excites me because I genuinely enjoy immersing myself
+          in both individual and group projects, where I can truly put my
+          skills to the test. Inspired early on by companies like Microsoft
+          and Google, using computer technology to create and innovate has
+          always been a huge passion of mine.
+        </p>
+        <p>
+          Since I was a child, I was extremely fascinated in learning about
+          computer mechanisms, functions, and systems. This curiosity led to
+          many technological projects I can proudly speak of today such as a
+          Web scraper, CNC milling machine, and a general -purpose processor.
+          Through the analytical, creativity, and problem-solving skills I
+          have gained from working on these, I can confidently say that I’m
+          ready for more. I’m interested in applying these skills at your
+          company to design a movement of more efficient and productive
+          processes.
+        </p>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio1"class="portfolio">
+      <h1>My Work</h1>
+
+      <!-- Images used to open the lightbox -->
+      <div class="row">
+        <div class="column">
+          <img src="images/preview/cncP.png" onclick="openModal();currentSlide(1)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="images/preview/flappybirdP.png" onclick="openModal();currentSlide(2)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="images/preview/webscraperP.png" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="images/preview/simpleprocessorP.png" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+        <div class="column">
+          <img src="images/preview/quizP.png" onclick="openModal();currentSlide(5)" class="hover-shadow">
+        </div>
+
+      </div>
+
+      <!-- The Modal/Lightbox -->
+      <div id="myModal" class="modal">
+        <a class="close" onclick="closeModal()">&times;</a>
+        <div class="modal-content">
+
+          <div class="mySlides">
+            <img src="images/full/cncF.png" style="width:100%">
+            <h3 class="project-title">CNC Milling Machine</h3>
+
+            <div>
+
+              <p class="project-description">
+                In grade 12, I was given the opportunity to lead a team project that was funded by our school
+                to make a 3 axis CNC wood milling machine. My role in the team included being the project
+                manager, software, and electronic specialist. The project in its entirety was constructed
+                from scratch and took a total of approximately 3 months.
+                <br>
+                A CNC (Computer numerical control) machine is programmed code that sends instructions to a
+                motor-controlled axis, which will then direct it to move precisely and cut or burn out a
+                design that was made virtually. These machines take a virtually made object and bring them
+                to life.
+                <br><br>
+                <strong><u>Design Process and Team Contribution:</u></strong>
+                <br>
+                As project manager, I took on the role of overseeing the project, which included creating
+                deadlines, helping all other members with their parts, organizing resources and meetings and
+                 much more.
+                 <br><br>
+
+                In regards to my sub-role of being the software and electronic specialist, my job was to design a
+                circuit that controlled all three DC brushless motors with an Arduino. I first started out by designing
+                 a circuit that was able to power the motors. I was able to find motor controllers online that already
+                 existed for a low-cost and would be easy to incorporate for our design as shown in the image below.
+                 After doing some research, I found a program that converted an STL file into g-code that could then
+                 be translated into instructions. I then used Arduino and programmed it to read instructions, which
+                 then allowed it to send signals to the motors. This enabled the motors to rotate at precise angles in
+                 order to cut out the desired object.
+
+
+
+
+              </p>
+            </div>
+          </div>
+
+          <div class="mySlides">
+
+            <img src="images/full/flappybirdF.png" style="width:100%">
+            <h3 class="project-title">Flappy Bird</h3>
+            <p class="project-description">
+
+           </p>
+          </div>
+
+          <div class="mySlides">
+
+            <img src="images/full/webscraperF.png" style="width:100%">
+            <h3 class="project-title">Web Scraper</h3>
+            <p class="project-description">
+              I took on this personal project in order to learn more about real-world applications of coding
+              (i.e how to extract information that is contained on the web and save it in a json
+              format that can be used to manipulate and save large amounts of data. This project
+              was a small scale example of how python can extract data and save it into a data
+              base.
+              <br><br>
+              The first part of my project was to access the
+              url: (<a href="http://ethans_fake_twitter_site.surge.sh/">ethans fake twitter site</a>)
+              and extract all of the information from the web page (“Scrape the website”).
+              <br><br>
+              This was done by using pythons’ request and beautifulsoup library. By using a for loop,
+              I was able to add each individual tweet into a python dictionary with the key information
+              such as author, date, tweet text, likes and shares. Then I proceeded to create a write JSON
+              file where I archived all of the tweets into a JSON list. By doing this, I was able to create
+              my own data base where the tweets could be searched through for information and or manipulated.
+              The screen shot on the most left is the webscraper.py source code and on the right is the result
+              of the collected data in JSON.
+              <br><br>
+              The second part of my project dealt with using the JSON data that was created in the first part.
+              <br><br>
+              With my first demonstration, I used two for loops to search through my data to find when Jimmy Fallon
+              used the key words
+              “Obama” and “thank you”. As you can see in the picture of the command prompt, the results returned that
+              Jimmy Fallon had mentioned Obama 35 times and thank you notes 29 times. This demonstration was a proof of
+              concept of how data can be taken from the web and phrased in such manner where the keyword information can be located.
+	            <br><br>
+              The second demonstration was about isolating all the dates that Jimmy Fallon had tweeted them and creating  a
+              separate repository named Dates.json (as seen in the right picture) in order to log which days Jimmy Fallon had tweeted.
+            </p>
+          </div>
+
+          <div class="mySlides">
+
+            <img src="images/full/simpleprocessorF.png" style="width:100%">
+            <h3 class="project-title">Simple General Processor</h3>
+            <p class="project-description">
+              To design and implement an arithmetic and logic unit (ALU) using the VHDL
+              language and Quartus 13.0 software on a FPGA board that allows simple
+              arithmetic and logic operations on two eight-bit numbers. This project was
+              done in second year for Digital Systems (COE 328) as my end term project.
+   
+
+              <br><br>
+              The first part of my project was to access the
+              url: (<a href="http://ethans_fake_twitter_site.surge.sh/">ethans fake twitter site</a>)
+              and extract all of the information from the web page (“Scrape the website”).
+              <br><br>
+              This was done by using pythons’ request and beautifulsoup library. By using a for loop,
+              I was able to add each individual tweet into a python dictionary with the key information
+              such as author, date, tweet text, likes and shares. Then I proceeded to create a write JSON
+              file where I archived all of the tweets into a JSON list. By doing this, I was able to create
+              my own data base where the tweets could be searched through for information and or manipulated.
+              The screen shot on the most left is the webscraper.py source code and on the right is the result
+              of the collected data in JSON.
+              <br><br>
+              4:16 Decoder and Finite State Machine (Control Unit) consists of two parts, the decoder and finite
+              state machine. The purpose of the control unit is to cycle through different states that determines
+              the operation that will be performed on the two 8-bit numbers.
+
+              <br><br>
+              The register/latch system (Control Unit) take 8-bit numbers in binary and temporarily store the input
+              values on the rising edge. On the following rising edge, the numbers are passed through the following
+             components in the system.
+
+              <br><br>
+              The arithmetic and logic unit (ALU) performs arithmetic and logical operations on two 8-bit numbers.
+              The inputs are received by the registers (Latch 1 and Latch 2) which take the quantities and perform the
+              function that is selected by the control unit.
+              <br><br>
+              Lastly, the 7 Segment (Output) displays the received output values from in decimal.  
+
+            </p>
+          </div>
+
+          <div class="mySlides">
+
+            <img src="images/full/quizF.png" style="width:100%">
+            <h3 class="project-title">Trivia App</h3>
+            <p class="project-description">
+              The Quiz App gives you 10 random multiple choice, trivia questions, from any
+              category ranging from hard-easy questions.
+   
+              <br><br>
+              This app uses components from OpenTrivia DataBase API, BootStrap, Vue, lodash libries. The questions
+              come from the open source API which are then put into a list and displayed by a bootstrap interface.
+              The user than has an option to select an answer(which is handled by scripts(javaScipt) written in Vue). After selecting the awnser the user can submit their choice and find out if theyre right as the correct answer will be highlighted green.
+
+            </p>
+          </div>
+
+
+
+          <!-- Next/previous controls -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact From -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <h1 id="contact-title">Contact</h1>
+        <form class="contact-form" action="contactform.php" method="post">
+
+          <h1 class="contact-fills">Name</h1>
+          <input type="text" id="name" name="name" placeholder="Full Name">
+
+          <h1 class="contact-fills">Mail</h1>
+          <input type="text" id="mail" name="mail" placeholder="Ex. Jhon@gmail.com">
+
+          <h1 class="contact-fills">subject</h1>
+          <input type="text" id="subject" name="subject" placeholder="Subject">
+
+          <h1 class="contact-fills">Message</h1>
+          <textarea id="message" name="message" placeholder="Write message here.." style="height:200px"></textarea>
+
+          <div class="">
+          <button class="contact-submit" type="submit" name="Submit">Send Message</button>
+          </div>
+        </form>
+
+        <a href="https://github.com/ajay-00" class="fa fa-github" target="_blank"></span></a>
+        <a href="https://www.linkedin.com/in/ajay-dhawan-033924177" class="fa fa-linkedin" target="_blank"></span></a>
+
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer id="footer">
+      <p>Thanks For Stopping By!
+        <br>
+        P.S Check out my Linkedin and Github</p>
+    </footer>
+
+  </div>
+
+  <!-- scripts -->
+  <script src="jquery-1.10.2.min.js"></script>
+  <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"> </script>
+  <script type="text/javascript" src="assets/js/index.js"></script>
+  <script type="text/javascript" src="assets/js/nav.js"></script>
+
+
+</body>
+</html>
